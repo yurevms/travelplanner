@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=Travel'
+      - 'POSTGRES_PASSWORD=123456'
+      - 'POSTGRES_USER=maxim'
+    ports:
+      - '7777:5432'
